@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-This project consists of developing a Pokemon-Like type game using the Windows Presentation Foundation (WPF) framework in C#. The game allows you to manage monsters and spells, connect via an ergonomic user interface and simulate turn-based battles. The game data is managed via a SQL Server Express database.
+This project is a Python implementation of the classic game of chess. The goal is to create a fully functional chess game with a modular and maintainable architecture, adhering to Python’s best practices and ensuring code quality through error handling, testing, and documentation.
 
 ## Technologies and tools used
 
@@ -18,6 +18,7 @@ For this project we worked on these technologies
 
 * [![Git][Git]][Git-url]
 
+* [![Python][Python]][Python-url]
 
   <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
@@ -125,6 +126,10 @@ Server="nameofyourcomputeur"\SQLEXPRESS;Database=ExerciceMonster;Trusted_Connect
 
 [Git]: https://img.shields.io/badge/Git-grey?style=for-the-badge&logo=git
 [Git-url]: https://git-scm.com
+
+[Python]: https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python
+[Python-url]: https://www.python.org
+
  
  
 [product-screenshot]: images/screenshot.png
