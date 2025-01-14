@@ -22,29 +22,27 @@ For this project we worked on these technologies
 
   <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
-## Architecture and model
+## Architecture and Design
 
-The project uses the MVVM (Model-View-ViewModel) pattern to ensure a clear separation of responsibilities.
+**Components**
 
-***Model*** : Contains data classes and manages business logic.
+***Board*** :  Represents the chessboard and manages the placement of pieces.
 
-***View*** : Represents the user interface (XAML).
+***Pieces*** : Encapsulates behavior for each type of chess piece (e.g., King, Queen, Pawn).
 
-***ViewModel*** : Links the model to the view.
+***Game Engine*** : Implements the game logic, rules, and turn management.
+
+***Player*** : Handles player-specific details and interactions.
+
+***Utils*** : Helper functions for input validation and utility tasks.
 
 <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
-## Database model
+**File Structure ex :**
 
-The provided model must be respected without modification. Example tables:
-
-***Users*** : Manages users.
-
-***Monsters*** : Manages monsters.
-
-***Spells*** : Manages spells.
-
-***CombatLogs*** : Stores combat logs (optional).
+<p align="center">
+  <img src="/Media/fless.png" alt="Battle Simulation">
+</p>
 
 <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
