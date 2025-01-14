@@ -106,9 +106,9 @@ Run the main script :
 
 ## Contact 
 
-[@Tokennn] (https://github.com/Tokennn)
-[@TerminaTorr45] (https://github.com/TerminaTorr45)
-[@M4xxes] (https://github.com/M4xxes)
+- [@Tokennn] (https://github.com/Tokennn)
+- [@TerminaTorr45] (https://github.com/TerminaTorr45)
+- [@M4xxes] (https://github.com/M4xxes)
 
 <!-- (Markdown img link) : -->
  
