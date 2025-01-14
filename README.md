@@ -52,9 +52,7 @@ For this project we worked on these technologies
 > [!IMPORTANT]
 > To get started with this project, you'll need :
 
-- [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) installed on your local machine.
-
-- [Visual Studio](https://visualstudio.microsoft.com/fr/) with WPF and Entity Framework extensions enabled.
+- [Visual Studio](https://visualstudio.microsoft.com/fr/) with python extension installed.
 
 - [Git](https://git-scm.com/downloads) for version control and collaboration.
 
@@ -68,8 +66,8 @@ For this project we worked on these technologies
 Clone the repository from GitHub:
 
 ```bash
-     git clone https://github.com/Tokennn/Pokemon.WPF.git
-     cd pokemon-like/
+     git https://github.com/Tokennn/ChestGame.git
+     cd ChestGame
 ````
 
 ➡️ Open the project in Visual Studio.
