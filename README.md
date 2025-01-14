@@ -70,9 +70,14 @@ Clone the repository from GitHub:
      cd ChestGame
 ````
 
-➡️ Open the project in Visual Studio.
+Create a virtual environment and activate it :
 
-➡️ Configure the database connection URL in the "Settings" tab.
+```bash
+     -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+````
+
+➡️ Open the project in Visual Studio.
 
 ➡️ Initialize the data by following the instructions below.
 
