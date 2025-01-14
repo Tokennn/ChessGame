@@ -94,6 +94,13 @@ Run the main script :
      python game.py
 ````
 
+## Future Enhancements
+
+- GUI: Add a graphical user interface using libraries like Tkinter or Pygame.
+
+- Multiplayer Online: Enable online multiplayer functionality.
+
+- Save/Load: Allow users to save and resume games.
 
 <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
