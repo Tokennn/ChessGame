@@ -77,6 +77,12 @@ Create a virtual environment and activate it :
     source venv/bin/activate  # On Windows: venv\Scripts\activate
 ````
 
+Install dependencies :
+
+```bash
+     pip install -r requirements.txt
+````
+
 ➡️ Open the project in Visual Studio.
 
 ➡️ Initialize the data by following the instructions below.
