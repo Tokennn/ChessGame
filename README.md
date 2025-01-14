@@ -1,4 +1,4 @@
-# ChestGame ♟️
+# ChessGame ♟️
 
 <a name="readme-top"></a>
 
