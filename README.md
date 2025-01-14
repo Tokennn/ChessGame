@@ -85,42 +85,15 @@ Install dependencies :
 
 ➡️ Open the project in Visual Studio.
 
-➡️ Initialize the data by following the instructions below.
 
-## Initialize the data
+## How to Run the Game
 
-**Thanks to a preconfigured table we can import it into a new database** :
-
-```bash
-
-CREATE TABLE Users (
-Id INT PRIMARY KEY IDENTITY,
-Username NVARCHAR(50),
-PasswordHash NVARCHAR(256)
-);
-INSERT INTO Users (Username, PasswordHash) VALUES ('admin', 'hashed_password');
-
-...
-````
-
-➡️ When you launch the game, you just need to click on the button (white square) to access your database connection : 
-
-<p align="center">
-  <img src="pokemon-like/images/img.png" alt="Battle Simulation">
-</p>
-
-➡️ Then once you get there :
-
-<p align="center">
-  <img src="pokemon-like/images/imgg.png" alt="Battle Simulation">
-</p>
-
-You just have to **write** : 
+Run the main script :
 
 ```bash
-Server="nameofyourcomputeur"\SQLEXPRESS;Database=ExerciceMonster;Trusted_Connection=True;TrustServerCertificate=True
-
+     python game.py
 ````
+
 
 <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
