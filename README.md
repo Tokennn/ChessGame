@@ -118,7 +118,3 @@ Run the main script :
 
 [Python]: https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python
 [Python-url]: https://www.python.org
-
- 
- 
-[product-screenshot]: images/screenshot.png
