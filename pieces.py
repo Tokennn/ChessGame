@@ -10,8 +10,9 @@ class Piece:
         raise NotImplementedError("Subclasses should implement this method")
 
     def move(self, to_position, board):
-        board.push(chess.Move(self.position, to_position))
         self.position = to_position
+
+
 
 class King(Piece):
     def __init__(self, color, position):

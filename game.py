@@ -8,7 +8,9 @@ class Game:
         self.board = Board(screen)
         self.running = True
         self.selected_piece = None
+        self.selected_square = None
         self.clock = pygame.time.Clock()  # Ajout de l'horloge pour la gestion du framerate
+        self.current_player = chess.WHITE  # Définir le joueur actuel
 
     def run(self):
         while self.running:
@@ -32,9 +34,18 @@ class Game:
         square = chess.square(col, row)
         piece = self.board.pieces.get(square)
 
-        if piece and piece.color == chess.WHITE:  # Assure-toi de vérifier la couleur de la pièce
-            if self.selected_piece:
+        if piece and piece.color == self.current_player:  # Vérifier la couleur de la pièce
+            self.selected_piece = piece
+            self.selected_square = square
+        elif self.selected_piece:
+            move = chess.Move(self.selected_square, square)
+            if move in self.board.chess_board.legal_moves:
+                self.board.chess_board.push(move)
                 self.selected_piece.move(square, self.board.chess_board)
                 self.selected_piece = None
+                self.selected_square = None
+                self.current_player = chess.BLACK if self.current_player == chess.WHITE else chess.WHITE  # Changer de joueur
             else:
-                self.selected_piece = piece
+                print("Mouvement illégal")
+                self.selected_piece = None
+                self.selected_square = None

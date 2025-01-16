@@ -71,6 +71,7 @@ class Board:
                 pygame.draw.rect(self.screen, color, pygame.Rect(col * 100, row * 100, 100, 100))
 
     def draw_pieces(self):
+        self.pieces = self.create_pieces()  # Mettre à jour les pièces après chaque mouvement
         for square, piece in self.pieces.items():
             col, row = chess.square_file(square), 7 - chess.square_rank(square)
             piece_image = self.piece_images.get((piece.color, piece.piece_type))
