@@ -4,9 +4,9 @@ import os
 from pieces import King, Queen, Bishop, Knight, Rook, Pawn
 
 class Board:
-    def __init__(self, screen):
+    def __init__(self, screen, board=None):
         self.screen = screen
-        self.chess_board = chess.Board()
+        self.chess_board = board if board else chess.Board()
         self.pieces = self.create_pieces()
         self.piece_images = self.load_piece_images()
         self.captured_pieces = {chess.WHITE: [], chess.BLACK: []}  # Liste pour stocker les pièces capturées
@@ -65,9 +65,11 @@ class Board:
         return piece_images
 
     def draw_board(self):
+        light_color = (211, 211, 211)  # Gris clair
+        dark_color = (105, 105, 105)   # Gris foncé
         for row in range(8):
             for col in range(8):
-                color = (105, 105, 105) if (row + col) % 2 == 0 else (211, 211, 211)
+                color = light_color if (row + col) % 2 == 0 else dark_color
                 pygame.draw.rect(self.screen, color, pygame.Rect(col * 100, row * 100, 100, 100))
 
     def draw_pieces(self):
