@@ -31,7 +31,7 @@ class Game:
             self.draw_save_and_quit_button()  # Dessiner le bouton "Save and Quit"
             pygame.display.flip()  # Mettre à jour l'affichage
 
-            self.clock.tick(60)  # Limite à 60 FPS (frames per second)
+            self.clock.tick(120)  # Limite à 60 FPS (frames per second)
 
         pygame.quit()
 
