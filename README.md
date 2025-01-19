@@ -3,7 +3,7 @@
 <a name="readme-top"></a>
 
 <p align="center">
-  <img src="/Media/giphy.gif" alt="Chess battle">
+  <img src="/images/giphy.gif" alt="Chess battle">
 </p>
 
 
@@ -41,7 +41,7 @@ For this project we worked on these technologies
 **File Structure ex :**
 
 <p align="center">
-  <img src="/Media/fless.png" alt="Battle Simulation">
+  <img src="/images/fless.png" alt="Battle Simulation">
 </p>
 
 <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
