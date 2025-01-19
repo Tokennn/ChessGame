@@ -19,6 +19,9 @@ def main():
     BLACK = (0, 0, 0)
     GRAY = (105, 105, 105)
     LIGHT_GRAY = (211, 211, 211)
+    BACKGROUND_COLOR = (30, 30, 50)  
+    HIGHLIGHT_COLOR = (10, 10, 10)
+
 
     # Police de caractères
     font = pygame.font.Font(None, 36)
@@ -34,12 +37,18 @@ def main():
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if new_game_button.collidepoint(event.pos):
+                    pygame.draw.rect(screen, HIGHLIGHT_COLOR, new_game_button)
+                    pygame.display.flip()
+                    pygame.time.delay(100) 
                     game = Game(screen)
                     game.run()
                 elif load_game_button.collidepoint(event.pos):
+                    pygame.draw.rect(screen, HIGHLIGHT_COLOR, load_game_button)
+                    pygame.display.flip()
+                    pygame.time.delay(200)
                     load_game(screen)
+        screen.fill(BACKGROUND_COLOR)
 
-        screen.fill(WHITE)
 
         # Dessiner les boutons
         pygame.draw.rect(screen, GRAY, new_game_button)
