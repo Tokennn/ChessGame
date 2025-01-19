@@ -60,6 +60,8 @@ For this project we worked on these technologies
 
 - [Chess-Game](https://python-chess.readthedocs.io/en/latest/) for the logic !
 
+- [Python](https://www.python.org/downloads/)
+
   <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
 ## Installation
