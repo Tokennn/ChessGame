@@ -1,0 +1,4 @@
+python-chess==1.999
+pygame==2.6.1
+loguru==0.7.0
+sphinx==7.3.2
