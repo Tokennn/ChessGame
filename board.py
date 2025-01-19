@@ -67,7 +67,7 @@ class Board:
     def draw_board(self):
         for row in range(8):
             for col in range(8):
-                color = (238, 238, 210) if (row + col) % 2 == 0 else (118, 150, 86)
+                color = (105, 105, 105) if (row + col) % 2 == 0 else (211, 211, 211)
                 pygame.draw.rect(self.screen, color, pygame.Rect(col * 100, row * 100, 100, 100))
 
     def draw_pieces(self):
