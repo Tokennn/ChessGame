@@ -14,6 +14,10 @@ def main():
     except pygame.error as e:
         return
 
+    background_image = pygame.image.load('images/paysage.jpeg')  # Remplacez par le chemin de votre image
+    background_image = pygame.transform.scale(background_image, (1100, 800))  # Redimensionner l'image
+
+
     # Couleurs
     WHITE = (255, 255, 255)
     BLACK = (0, 0, 0)
@@ -48,6 +52,9 @@ def main():
                     pygame.time.delay(200)
                     load_game(screen)
         screen.fill(BACKGROUND_COLOR)
+
+        screen.blit(background_image, (0, 0))
+
 
 
         # Dessiner les boutons
