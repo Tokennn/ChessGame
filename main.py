@@ -24,7 +24,7 @@ def main():
     GRAY = (105, 105, 105)
     LIGHT_GRAY = (211, 211, 211)
     BACKGROUND_COLOR = (30, 30, 50)  
-    HIGHLIGHT_COLOR = (10, 10, 10)
+    HIGHLIGHT_COLOR = (255, 255, 255)
 
 
     # Police de caractères
