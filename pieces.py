@@ -12,8 +12,6 @@ class Piece:
     def move(self, to_position, board):
         self.position = to_position
 
-
-
 class King(Piece):
     def __init__(self, color, position):
         super().__init__(color, position, chess.KING)

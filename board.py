@@ -9,6 +9,8 @@ class Board:
         self.chess_board = chess.Board()
         self.pieces = self.create_pieces()
         self.piece_images = self.load_piece_images()
+        self.captured_pieces = {chess.WHITE: [], chess.BLACK: []}  # Liste pour stocker les pièces capturées
+        self.highlighted_square = None  # Case en surbrillance
 
     def create_pieces(self):
         pieces = {}
@@ -53,11 +55,9 @@ class Board:
         for color in [chess.WHITE, chess.BLACK]:
             for piece_type in piece_types:
                 image_path = os.path.join(current_dir, 'images', f"{color_names[color]}_{piece_types[piece_type]}.png")
-                print(f"Essai de charger l'image : {image_path}")
                 if os.path.exists(image_path):
                     piece_images[(color, piece_type)] = pygame.image.load(image_path).convert_alpha()
                 else:
-                    print(f"Image non trouvée : {image_path}")
                     images_loaded = False  # Si une image est manquante
 
         if not images_loaded:
@@ -77,5 +77,22 @@ class Board:
             piece_image = self.piece_images.get((piece.color, piece.piece_type))
             if piece_image:
                 self.screen.blit(piece_image, pygame.Rect(col * 100, row * 100, 100, 100))
-            else:
-                print(f"Image manquante pour la pièce: {piece.color} {piece.piece_type}")
+
+        self.draw_captured_pieces()  # Dessiner les pièces capturées
+        self.draw_highlighted_square()  # Dessiner la case en surbrillance
+
+    def draw_captured_pieces(self):
+        # Dessiner les pièces capturées à côté de l'échiquier
+        for color in [chess.WHITE, chess.BLACK]:
+            x_offset = 850 if color == chess.WHITE else 950
+            y_offset = 50
+            for piece in self.captured_pieces[color]:
+                piece_image = self.piece_images.get((piece.color, piece.piece_type))
+                if piece_image:
+                    self.screen.blit(piece_image, pygame.Rect(x_offset, y_offset, 100, 100))
+                    y_offset += 100
+
+    def draw_highlighted_square(self):
+        if self.highlighted_square is not None:
+            col, row = chess.square_file(self.highlighted_square), 7 - chess.square_rank(self.highlighted_square)
+            pygame.draw.rect(self.screen, (255, 0, 0), pygame.Rect(col * 100, row * 100, 100, 100), 5)  # Dessiner un rectangle rouge
