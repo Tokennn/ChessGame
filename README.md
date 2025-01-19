@@ -56,6 +56,10 @@ For this project we worked on these technologies
 
 - [Git](https://git-scm.com/downloads) for version control and collaboration.
 
+- [Pygame](https://www.pygame.org/docs/) for the interface
+
+- [Chess-Game](https://python-chess.readthedocs.io/en/latest/) for the logic !
+
   <p align="right">(<a href="#readme-top"><strong>Back to top</strong></a>)</p>
 
 ## Installation
