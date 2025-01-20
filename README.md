@@ -97,7 +97,7 @@ Install dependencies :
 Run the main script :
 
 ```bash
-     python3 game.py
+     python3 main.py
 ````
 
 ## Future Enhancements
